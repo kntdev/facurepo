@@ -1,0 +1,426 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    /* height: 100vh; */
+    position: relative;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    background-color: aquamarine;
+    z-index: 1;
+}
+
+main {
+    background-color: aquamarine;
+}
+/*///////EStilos nuevos//////////////*/
+
+
+a{
+    text-decoration: none;
+        color: #fff;
+    }
+
+.container-photo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.container-biography{
+    display: flex;
+    align-items: center;
+}
+/*//////////////////////////////////////*/
+/* .container_grid{
+    display: grid;
+    grid-template-rows: 35px 1fr 1fr 1fr;
+    grid-template-columns: repeat(4,1fr);
+    width: 40%;
+    margin: auto;
+    gap: 2px;
+    background-color: rgb(255, 255, 255);
+    padding: 2px;
+    margin-bottom: 60px;
+}
+.grid_titulo{
+    background-color: #04AA6D;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+
+}
+.grid_parrafo-pri{
+    background-color: rgb(223, 223, 223);
+}
+.grid_parrafo-seg{
+    background-color: rgb(249, 249, 249);
+}
+.span-gen{
+    padding: 4px;
+    margin: 1px;
+} */
+/*//////////////////////////////////////*/
+
+/*//////////////////////////////////////*/
+
+
+.bgHeader{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(75%);
+}
+
+.bgFooter{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.subTitulo {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 60px;
+}
+
+.parrafos {
+    font-size: 1.2em;
+    text-align: center;
+    background-color: #e7e7e7e2;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+h4 {
+    font-size: 1.4em;
+    text-align: center;
+    background-color: #e7e7e7e2;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+/* PARA EL NAV **********************************************/
+
+.items{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 7px;
+}
+
+.item{
+    margin: 7px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    transition: 300ms ease-out background-color;
+    cursor: pointer;
+    background: blueviolet;
+    color: aquamarine; /*No me toma el color, se suporpone el azul del link*/
+    border-radius: 10px;
+}
+/***************************************************************/
+
+.titulo {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0.4em;
+    padding: 0.2em;
+}
+
+/* INICIO **************************************/
+
+.wrapper {
+	padding: 5px;
+	max-width: 95%;
+	margin: 20px auto;
+}
+
+/*Se me creó una barra horizontal y no se como arreglarla....
+(Por algun motivo solo está en el header, si bajas desaparece)*/
+/*Bueno, aparentemente desapareció la barra, pero cuando lo pasas a modo 
+tablet/celu se me crea un espacio en blanco a la derecha de toda la pantalla*/
+
+.columns {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	padding: 5px 0;
+}
+
+.column {
+	flex: 1;
+	border: 1px solid gray; /*Para ver como queda nomas, desp lo borro*/
+	margin: 2px;
+	padding: 10px;
+	&:first-child { margin-left: 0; }
+	&:last-child { margin-right: 0; }	
+}
+
+@media screen and (max-width: 990px) {
+    .columns .column {
+		margin-bottom: 5px;
+        flex-basis: 40%;
+		&:nth-last-child(2) {
+			margin-right: 0;
+		}
+		&:last-child {
+			flex-basis: 100%;
+			margin: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.columns .column {
+		flex-basis: 100%;
+		margin: 0 0 5px 0;
+	}
+}
+
+.perfil {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid aquamarine;
+}
+
+.container-margin {
+    margin: 5px;
+}
+
+/* SLIDER ************************************/
+.container-slider{
+    width: 100%;
+    max-width: 900px;
+    min-width: 280px;
+    overflow: hidden;
+    box-shadow: 0 0 0 7px #fff,
+                0 15px 50px;
+    position: relative;
+    margin-bottom: 40px;
+    margin-right: 20px;
+    margin: auto;
+}
+
+.slider{
+    display: flex;
+    width: 500%;
+    height: 400px;
+    margin-left: -100%;
+}
+.slider__section{
+    width: 100%;
+}
+.slider__img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider__btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+}
+.slider__btn:hover{
+    background-color: #fff;
+    transition: 1s;
+}
+.slider__btn__right{
+    right: 10px;
+}
+
+.slider__btn__left{
+    left: 10px;
+}
+
+/* INFO ****************************************/
+
+.info-bg{
+    background-image: url(https://d2r9epyceweg5n.cloudfront.net/stores/254/135/products/tablas-madera1-e67b6fc5b14384459d15587177865189-1024-1024.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40%;
+}
+
+.container-info{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lista{
+    list-style-type: square;
+}
+
+.lista li {
+    border-bottom: solid;
+    border-width: .1em;
+    margin: .2em;
+    font-size: 1.2em;
+}
+
+/* ESTUDIOS ***********************************/
+
+.estudios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8cae1a69-dfc8-4fad-905a-423707b8a2a7/dclt3xu-b265d920-18b5-4517-9723-539b1f847338.png/v1/fill/w_1024,h_512,q_80,strp/flag_of_the_roman_empire_by_vetlejacob_dclt3xu-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTEyIiwicGF0aCI6IlwvZlwvOGNhZTFhNjktZGZjOC00ZmFkLTkwNWEtNDIzNzA3YjhhMmE3XC9kY2x0M3h1LWIyNjVkOTIwLTE4YjUtNDUxNy05NzIzLTUzOWIxZjg0NzMzOC5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.zovRBOhRqZsBLjiDTvTSu7QqayawgZEJoat_wnAv5yU);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 40px;
+    border-radius: 15px;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 40px 10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.289);
+    -moz-box-shadow: 0px 0px 40px 10px rgba(0,0,0,0.75);
+}
+
+.text-estudios{
+    width: 400px;
+    min-width: 200px;
+    margin-inline: 20px;
+    background-color: #e7e7e7e2;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.text-estudios strong{
+    font-size: 1.4em;
+    color: #2d2d2d;
+}
+
+.text-estudios p{
+    font-size: 1.2em;
+    color: #424242;
+}
+
+.text-estudios span {
+    color: royalblue;
+}
+
+/* EXPERIENCIA ***************************************/
+
+.container-experiencia {
+    padding-bottom: 3em;
+}
+
+.trabajos {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 60%;
+    margin: auto;
+    background-color: white;
+}
+
+.trabajos td, .trabajos th {
+    padding: 8px;
+}
+
+.trabajos tr:nth-child(even){background-color: #f2f2f2;}
+
+.trabajos tr:hover {background-color: #ddd;}
+
+.trabajos th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* FOOTER ********************************************/
+
+footer h3 {
+    color: aquamarine;
+}
+
+/* FORMULARIO ****************************************/
+
+.contenedor-form{
+    background-color: rgba(255, 255, 255, 0);
+    width: 60%;
+    margin: auto;
+    max-width: 400px;
+    min-width: 240px;
+    border-radius: 1em;
+    padding: 3.5em 1.5em;
+    margin-bottom: 34px;
+}
+.formulario{
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+}
+.form-input{
+    font-size: 1rem;
+    padding: .8em 1em;
+    outline: none;
+    border: 1px solid #bbb0b0;
+    border-radius: 0.2em;
+}
+.form-input-msg{
+    resize: none;
+    padding: 1.8em 1em;
+    margin-bottom: .5em;
+}
+.btn-form{
+    font-size: 1rem;
+    background-color: #089;
+    color: #fff;
+    border: none;
+    font-weight: 800;
+    padding: .7em 0;
+    border-radius: .2em;
+    cursor: pointer;
+    transition: 300ms ease-out background-color;
+}
+.btn-form:hover{
+    background-color: rgb(89, 198, 212);
+    transition: 300ms ease-out background-color;
+}

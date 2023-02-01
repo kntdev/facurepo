@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum Vitae F.Z.</title>
+    
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--Link para el fade de estudios-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- "Reinicia" los margenes , y etc.. a cero, para todos los navegadores-->
+    <link rel="stylesheet" href="./CSS/normalize.css">
+
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <!--Bustra-->
+
+</head>
+
+<body>
+    <header>
+        <img class="bgHeader" src="./assets/death_stranding.jpg" alt="Fondo de pantalla">
+        <!------------------------------||--------->
+        <!------------------- NAV ------||--------->
+        <!------------------------------\/--------->
+
+    <!--SANTI, fijate que el nav me queda por debajo del slider.
+    No se que mierden hacer, se me hace que es por el position relative del container-slider -->
+        <nav>
+            <ul class="items">
+                <li class="item"><a href="#inicio">INICIO</a></li>
+                <li class="item"><a href="#info">INFO PERSONAL</a></li>
+                <li class="item"><a href="#estudios">FORMACION Y ESTUDIOS</a></li>
+                <li class="item"><a href="#experiencia">EXPERIENCIA</a></li>
+                <li class="item"><a href="#contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <!------------------------------/\--------->
+        <!------------------- NAV ------||--------->
+        <!------------------------------||--------->
+
+
+        <!-----------------SECCION-------------||--------->
+        <!-----------------PRINCIPAL ----------||--------->
+        <!-----------------DEL HEADER----------\/--------->
+        <h1 id="inicio" class="titulo">Curriculum Vitae Facundo Zubillaga</h1>
+
+        <!--Wrapper para hacer responsivo el div-->
+        <div class="wrapper">
+
+            <section class="columns">
+
+                <div class="container-margin column container-photo">
+                    <img class="perfil" src="./assets/yo.jfif" alt="Foto de perfil">
+                    <p class="parrafos"><strong>Pasión por los videojuegos</strong></p>
+                </div>
+        
+                <div class="container-margin column container-biography">
+                    <p class="parrafos">Juego videojuegos desde los 3 años, y a los 19 decidí que me quería dedicar a la industria.<br>
+                    Mi sueño es convertirme en Game-Director en una empresa de videojuegos AAA<br>
+                    Por otro lado, también me gusta la programación en general, y me gustaría poder dedicarme a ello antes de entrar al mercado de los videojuegos</p>
+                </div>
+
+                <!-- Cuando achicas la pantalla a table/celu, se estira el div, pero no el head
+                Entonces el slider se me superpone con lo que está en el main-->
+                <div class="container-margin column">
+                    <div class="container-slider">
+
+                        <div class="slider" id="slider">
+                            <div class="slider__section">
+                                <img class="slider__img" src="./assets/DMC.png" alt="Devil May Cry">
+                            </div>
+                            <div class="slider__section">
+                                <img class="slider__img" src="./assets/broly.jpg" alt="Broly">
+                            </div>
+                            <div class="slider__section">
+                                <img class="slider__img" src="./assets/r+.jpg" alt="Rammstein">
+                            </div>
+                            <div class="slider__section">
+                                <img class="slider__img" src="./assets/dios.jpg" alt="Kojima">
+                            </div>
+                            <div class="slider__section">
+                                <img class="slider__img" src="./assets/guts.jpg" alt="Berserk">
+                            </div>
+                        </div>
+    
+                        <div id="btn-right" class="slider__btn slider__btn__right">&#62;</div>
+                        <div id="btn-left" class="slider__btn slider__btn__left">&#60;</div>
+    
+                    </div>
+                    <h4>Mis cosas favoritas son</h4>
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <!-----------------SECCION-------------/\--------->
+        <!-----------------PRINCIPAL ----------||--------->
+        <!-----------------DEL HEADER----------||--------->
+    </header>
+
+    <!--------------------------------------------------------------------------------------->
+
+    <!------------------------------||--------->
+    <!------------------ MAIN ------||--------->
+    <!------------------------------\/--------->
+    <main>
+        <!------------------------------||--------->
+        <!------------------ INFO ------||--------->
+        <!------------------------------\/--------->
+            <section>
+                
+                <h3 id="info" class="subTitulo">Info personal</h3>
+                <div class="container-info info-bg">
+                    <ul class="lista">
+                        <li>Documento: 00.666.000</li>
+                        <li>Nacionalidad: Asgaardiano</li>
+                        <li>Dirección: Calle Falsa 123, Springfield</li>
+                        <li>Telefono: 0303-456</li>
+                        <li>Email: FZP1998DFB@GMAIL.COM</li>
+                        <li>Fecha de nacimiento: 07/11/1998</li>
+                    </ul>
+                </div>
+            </section>
+            <!------------------------------/\--------->
+            <!------------------ INFO ------||--------->
+            <!------------------------------||--------->
+
+            <!--------------------------------------------------------------------------------------->
+
+            <!------------------------------||--------->
+            <!-------------- ESTUDIOS ------||--------->
+            <!------------------------------\/--------->
+            <section>
+
+                <h3 id="estudios" class="subTitulo">Formacion y estudios</h3>
+                <div class="container-estudios">
+                    <div data-aos="fade-right" class="estudios">
+                        <div class="text-estudios">
+                            <p><strong>Escuela Secundaria N°6 Jose Félix Bogado:</strong> Bachiller en Ciencias Naturales</p>
+                        </div>
+                    </div>
+                    <!------------------------------------------------------------------------------->
+                    <div data-aos="fade-left" class="estudios">
+                        <div class="text-estudios">
+                            <p><strong>Universidad Tecnológica Nacional:</strong> 1er año de Ing. Aeronáutica <span>(Abandonado)</span></p>
+                        </div>
+                    </div>
+                    <!------------------------------------------------------------------------------->
+                    <div data-aos="fade-right" class="estudios">
+                        <div class="text-estudios">
+                            <p><strong>Escuela DaVinci:</strong> "Realización integral de videojuegos</p>
+                        </div>
+                    </div>
+                    <!------------------------------------------------------------------------------->
+                    <div data-aos="fade-left" class="estudios">
+                        <div class="text-estudios">
+                            <p><strong>Argentina Programa 4.0</strong>, programación orientada a objetos</p>
+                        </div>
+                    </div>
+                    <!------------------------------------------------------------------------------->
+                    <div data-aos="fade-right" class="estudios">
+                        <div class="text-estudios">
+                            <p><strong>Idiomas:</strong> Ingles <span>(Upper intermediate)</span>/ Japonés <span>(Básico)</span></p>
+                        </div>    
+                    </div>
+                </div>
+            </section>
+        <!------------------------------/\--------->
+        <!-------------- ESTUDIOS ------||--------->
+        <!------------------------------||--------->
+
+        <!--------------------------------------------------------------------------------------->
+
+        <!------------------------------||--------->
+        <!----------- EXPERIENCIA ------||--------->
+        <!------------------------------\/--------->
+        <section>
+            <h3 id="experiencia" class="subTitulo">Experiencia</h3>
+
+            <!-- <article class="container_grid">
+
+                    <span class="span-gen grid_titulo">Rubro</span>
+                    <span class="span-gen grid_titulo">Empresa/Establecimiento</span>
+                    <span class="span-gen grid_titulo">Fecha</span>
+                    <span class="span-gen grid_titulo">Puesto</span>
+
+                    <span class="span-gen grid_parrafo-pri">Seguridad</span>
+                    <span class="span-gen grid_parrafo-pri">C.i.5 S.A.</span>
+                    <span class="span-gen grid_parrafo-pri">Junio 2021 - Enero 2022</span>
+                    <span class="span-gen grid_parrafo-pri">Operador de Monitoreo</span>
+
+                    <span class="span-gen grid_parrafo-seg">Retail</span>
+                    <span class="span-gen grid_parrafo-seg">Autoservicio Mayorista Diarco S.A.</span>
+                    <span class="span-gen grid_parrafo-seg">Septiembre 2019 - Mayo 2021</span>
+                    <span class="span-gen grid_parrafo-seg">Encargado de salón turno tarde</span>
+
+                    <span class="span-gen grid_parrafo-pri">Lotería</span>
+                    <span class="span-gen grid_parrafo-pri">Agencia de Quiniela Pepe Grillo 2</span>
+                    <span class="span-gen grid_parrafo-pri">Mayo 2017 - Septiembre 2017</span>
+                    <span class="span-gen grid_parrafo-pri">Atención al público</span>
+
+            </article> -->
+            <div class="container-experiencia">
+                <table class="trabajos">
+                    <tr>
+                        <th>Rubro</th>
+                        <th>Empresa/Establecimiento</th>
+                        <th>Fecha</th>
+                        <th>Puesto</th>
+                    </tr>
+                    <tr>
+                        <td>Seguridad</td>
+                        <td>C.i.5 S.A.</td>
+                        <td>Junio 2021 - Enero 2022</td>
+                        <td>Operador de Monitoreo</td>
+                    </tr>
+                    <tr>
+                        <td>Retail</td>
+                        <td>Autoservicio Mayorista Diarco S.A.</td>
+                        <td>Septiembre 2019 - Mayo 2021</td>
+                        <td>Encargado de salón turno tarde</td>
+                    </tr>
+                    <tr>
+                        <td>Lotería</td>
+                        <td>Agencia de Quiniela Pepe Grillo 2</td>
+                        <td>Mayo 2017 - Septiembre 2017</td>
+                        <td>Atenció al público</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <!------------------------------/\--------->
+        <!----------- EXPERIENCIA ------||--------->
+        <!------------------------------||--------->
+
+    </main>
+    <!------------------------------/\--------->
+    <!------------------ MAIN ------||--------->
+    <!------------------------------||--------->
+
+    <!--------------------------------------------------------------------------------------->
+
+    <!------------------------------||--------->
+    <!---------------- FOOTER ------||--------->
+    <!------------------------------\/--------->
+    <footer>
+        <img class="bgFooter" src="./assets/idroid.png" alt="Fondo del footer">
+        <h3 id="contacto" class="subTitulo">CONTACTO</h3>
+        
+        <div class="contenedor-form">
+            <form class="formulario" action="https://formspree.io/f/mrgveqqn" method="POST">
+                <input class="form-input" type="text" placeholder="Nombre:" name="Nombre" required>
+                <input class="form-input" type="email" placeholder="Email:" name="Email" required>
+                <input class="form-input" type="number" placeholder="Telefono:" name="Telefono">
+                <textarea class="form-input form-input-msg" placeholder="Mensaje:" name="Mensaje" required></textarea>
+                <input class="btn-form" type="submit" value="Enviar">
+            </form>
+        </div>
+
+        <!--------------------------------------------------------------------------------------->
+        <!---NO ME TOMA LOS ICONOS---https://mdbootstrap.com/docs/standard/navigation/footer/ --->
+        <!--------------------------------------------------------------------------------------->
+        <!-- Grid container -->
+        <div class="container p-4 pb-0 text-center text-white">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    ><i class="fab fa-facebook-f"></i
+                ></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    ><i class="fab fa-twitter"></i
+                ></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    ><i class="fab fa-google"></i
+                ></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    ><i class="fab fa-instagram"></i
+                ></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    ><i class="fab fa-linkedin-in"></i
+                ></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    ><i class="fab fa-github"></i
+                ></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+    </footer>
+    <!------------------------------/\--------->
+    <!---------------- FOOTER ------||--------->
+    <!------------------------------||--------->
+
+    <!---->
+    <script src="./js/script.js"></script>
+
+    <!--Scrip para el fade de "estudios"-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
